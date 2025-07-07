@@ -17,7 +17,7 @@ Thank you for your interest in improving this project!
 
 ## Bug Reports & Feature Requests
 
-- Use [GitHub Issues](https://github.com/Muhammad_Syawal/silent-library-website/issues).
+- Use [GitHub Issues](https://github.com/Muhammad-Syawal/silent-library-website/issues).
 - Be clear and specific: steps to reproduce, screenshots, or sample code are appreciated.
 
 ## Code of Conduct
