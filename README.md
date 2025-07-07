@@ -1,6 +1,6 @@
 # Silent Library Website
 
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/silent-library-website)
+![GitHub license](https://img.shields.io/github/license/Muhammad-Syawal/silent-library-website)
 ![GitHub Pages](https://img.shields.io/badge/pages-live-brightgreen)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
@@ -24,7 +24,7 @@ A responsive, public-facing website for Silent Library, built with HTML, CSS (Bo
 
 ## Live Demo
 
-[View the website on GitHub Pages](https://YOUR_USERNAME.github.io/silent-library-website/)
+[View the website on GitHub Pages](https://Muhammad-Syawal.github.io/silent-library-website/)
 
 > _If images or CSS don’t load, check your asset paths: GitHub Pages is case-sensitive and all file paths must be correct. [More info](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)_
 
@@ -33,7 +33,7 @@ A responsive, public-facing website for Silent Library, built with HTML, CSS (Bo
 No installation required:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/silent-library-website.git
+git clone https://github.com/Muhammad-Syawal/silent-library-website.git
 cd silent-library-website
 # Open index.html in your browser
 ```
