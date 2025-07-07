@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Silent Library. Get in touch with us for inquiries, memberships, or assistance with our services."
+    />
+    <meta
+      name="keywords"
+      content="contact Silent Library, library contact, get in touch, library services"
+    />
+    <title>Contact Us - Silent Library</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-book me-2"></i>Silent Library
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#promotions"
+                >Library Promotions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="hero-section"
+      style="min-height: 40vh; padding: 6rem 0 3rem"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 mb-3">Contact Us</h1>
+            <p class="lead">
+              We're here to help! Get in touch with us for any questions,
+              suggestions, or assistance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-5">
+            <div class="contact-form">
+              <h3 class="mb-4">Send us a Message</h3>
+              <form id="contactForm" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label"
+                      >First Name *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide your first name.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide your last name.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label"
+                      >Email Address *</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid email address.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject *</label>
+                  <select class="form-select" id="subject" required>
+                    <option value="">Choose a subject...</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="membership">Membership Information</option>
+                    <option value="event">Event Registration</option>
+                    <option value="book">Book Request/Suggestion</option>
+                    <option value="technical">Technical Support</option>
+                    <option value="feedback">Feedback/Complaint</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message *</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                    placeholder="Please provide details about your inquiry..."
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please provide your message.
+                  </div>
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="newsletter"
+                  />
+                  <label class="form-check-label" for="newsletter">
+                    Subscribe to our newsletter for updates on new books and
+                    events
+                  </label>
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="privacy"
+                    required
+                  />
+                  <label class="form-check-label" for="privacy">
+                    I agree to the
+                    <a href="privacy.html" target="_blank">Privacy Policy</a> *
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree to the privacy policy.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-envelope me-2"></i>Send Message
+                </button>
+              </form>
+
+              <div
+                id="successMessage"
+                class="alert alert-success mt-3"
+                style="display: none"
+              >
+                <i class="bi bi-check-circle me-2"></i>
+                Thank you for your message! We'll get back to you within 24
+                hours.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <div class="contact-info">
+              <h3 class="mb-4">Get in Touch</h3>
+
+              <div class="contact-item mb-4">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="bi bi-geo-alt text-primary me-3"
+                    style="font-size: 1.5rem"
+                  ></i>
+                  <div>
+                    <h5>Address</h5>
+                    <p class="text-muted mb-0">
+                      123 Library Street<br />
+                      Knowledge City, KC 12345<br />
+                      United States
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="bi bi-telephone text-primary me-3"
+                    style="font-size: 1.5rem"
+                  ></i>
+                  <div>
+                    <h5>Phone</h5>
+                    <p class="text-muted mb-0">
+                      Main: <a href="tel:+15551234567">(555) 123-4567</a><br />
+                      Reference: <a href="tel:+15551234568">(555) 123-4568</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="bi bi-envelope text-primary me-3"
+                    style="font-size: 1.5rem"
+                  ></i>
+                  <div>
+                    <h5>Email</h5>
+                    <p class="text-muted mb-0">
+                      General:
+                      <a href="mailto:info@silentlibrary.com"
+                        >info@silentlibrary.com</a
+                      ><br />
+                      Events:
+                      <a href="mailto:events@silentlibrary.com"
+                        >events@silentlibrary.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="bi bi-clock text-primary me-3"
+                    style="font-size: 1.5rem"
+                  ></i>
+                  <div>
+                    <h5>Opening Hours</h5>
+                    <p class="text-muted mb-0">
+                      <strong>Monday - Friday:</strong><br />9:00 AM - 8:00
+                      PM<br />
+                      <strong>Saturday:</strong><br />10:00 AM - 6:00 PM<br />
+                      <strong>Sunday:</strong><br />12:00 PM - 5:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                  <a href="#" class="me-3 text-primary" aria-label="Facebook">
+                    <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+                  </a>
+                  <a href="#" class="me-3 text-primary" aria-label="Twitter">
+                    <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+                  </a>
+                  <a href="#" class="me-3 text-primary" aria-label="Instagram">
+                    <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+                  </a>
+                  <a href="#" class="text-primary" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="section-title">Find Us</h3>
+            <div class="map-container">
+              <div
+                class="bg-light text-center py-5 rounded"
+                style="min-height: 400px"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center h-100"
+                >
+                  <div>
+                    <i
+                      class="bi bi-geo-alt text-primary"
+                      style="font-size: 4rem"
+                    ></i>
+                    <h4 class="mt-3">Interactive Map</h4>
+                    <p class="text-muted">
+                      123 Library Street, Knowledge City, KC 12345<br />
+                      <a
+                        href="https://maps.google.com"
+                        target="_blank"
+                        class="btn btn-outline-primary mt-2"
+                      >
+                        <i class="bi bi-map me-2"></i>View on Google Maps
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1"
+                    aria-expanded="true"
+                    aria-controls="collapse1"
+                  >
+                    How do I become a library member?
+                  </button>
+                </h2>
+                <div
+                  id="collapse1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="faq1"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    To become a library member, simply visit us with a valid ID
+                    and proof of address. Membership is free and gives you
+                    access to our entire collection, events, and digital
+                    resources.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse2"
+                    aria-expanded="false"
+                    aria-controls="collapse2"
+                  >
+                    How long can I borrow books?
+                  </button>
+                </h2>
+                <div
+                  id="collapse2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq2"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Books can be borrowed for 3 weeks and renewed twice if no
+                    one else has reserved them. DVDs and audiobooks have a
+                    1-week loan period.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse3"
+                    aria-expanded="false"
+                    aria-controls="collapse3"
+                  >
+                    Do you have digital resources?
+                  </button>
+                </h2>
+                <div
+                  id="collapse3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq3"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes! We offer e-books, digital audiobooks, online databases,
+                    and free Wi-Fi. Members can access digital resources 24/7
+                    with their library card.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse4"
+                    aria-expanded="false"
+                    aria-controls="collapse4"
+                  >
+                    Can I suggest books for purchase?
+                  </button>
+                </h2>
+                <div
+                  id="collapse4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq4"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Absolutely! We welcome book suggestions from our community.
+                    You can submit requests through our contact form or speak
+                    with any librarian during your visit.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse5"
+                    aria-expanded="false"
+                    aria-controls="collapse5"
+                  >
+                    Are events free for members?
+                  </button>
+                </h2>
+                <div
+                  id="collapse5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq5"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, all our events including book clubs, author readings,
+                    and workshops are completely free for library members. Some
+                    events may require advance registration due to limited
+                    space.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5><i class="bi bi-book me-2"></i>Silent Library</h5>
+            <p>
+              Your gateway to knowledge and community. Discover, learn, and
+              connect through our comprehensive library services.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="me-3" aria-label="Facebook"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Twitter"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Instagram"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contact Info</h5>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>123 Library Street<br />Knowledge
+              City, KC 12345
+            </p>
+            <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+            <p><i class="bi bi-envelope me-2"></i>info@silentlibrary.com</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Opening Hours</h5>
+            <p><strong>Monday - Friday:</strong><br />9:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong><br />10:00 AM - 6:00 PM</p>
+            <p><strong>Sunday:</strong><br />12:00 PM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <a href="privacy.html" class="me-3">Privacy Policy</a>
+              <a href="sitemap.html">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

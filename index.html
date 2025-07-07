@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Silent Library - Your gateway to knowledge. Browse books, attend events, and explore our comprehensive library services."
+    />
+    <meta
+      name="keywords"
+      content="library, books, events, reading, education, Silent Library"
+    />
+    <title>Silent Library - Home</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-book me-2"></i>Silent Library
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promotions">Library Promotions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1>Welcome to Silent Library</h1>
+              <p class="lead">
+                Discover a world of knowledge with our extensive collection of
+                books, engaging events, and comprehensive library services.
+              </p>
+              <a href="books.html" class="btn btn-accent btn-lg me-3"
+                >Browse Books</a
+              >
+              <a href="events.html" class="btn btn-outline-light btn-lg"
+                >View Events</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              id="featuredCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#featuredCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#featuredCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#featuredCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    class="d-block w-100"
+                    alt="Featured Book Collection"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>New Arrivals</h5>
+                    <p>Discover our latest book acquisitions</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    class="d-block w-100"
+                    alt="Library Event"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Community Events</h5>
+                    <p>Join our reading circles and workshops</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    class="d-block w-100"
+                    alt="Digital Resources"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Digital Resources</h5>
+                    <p>Access our online catalog and e-books</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#featuredCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#featuredCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Books</h2>
+        <p class="section-subtitle">
+          Discover our hand-picked selection of must-read books
+        </p>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="images/elon-musk.JPG"
+                class="card-img-top"
+                alt="Book cover of Elon Musk biography by Walter Isaacson, featuring a close-up of Elon Musk's face"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Elon Musk</h5>
+                <p class="card-text flex-grow-1">
+                  This biography details Elon Musk's journey, from bullied child
+                  to a visionary in EVs, space, and AI. It explores his driven,
+                  complex nature shaped by his past.
+                </p>
+                <a href="book-detail.html?id=1" class="btn btn-primary mt-auto"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="images/heroes-of-the-computer-revolution.jpg"
+                class="card-img-top"
+                alt="Book cover for Hackers: Heroes of the Computer Revolution by Steven Levy, depicting themes of early computing and the pioneering hacker culture"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Hackers Heroes of the Computer Revolution
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Exploring how technology is reshaping our world and the future
+                  of human interaction.
+                </p>
+                <a href="book-detail.html?id=2" class="btn btn-primary mt-auto"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                class="card-img-top"
+                alt="Modern Literature"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Modern Literature</h5>
+                <p class="card-text flex-grow-1">
+                  A curated collection of contemporary literary works that
+                  define our current era.
+                </p>
+                <a href="book-detail.html?id=3" class="btn btn-primary mt-auto"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                class="card-img-top"
+                alt="Science Discoveries"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Science Discoveries</h5>
+                <p class="card-text flex-grow-1">
+                  Fascinating insights into the latest scientific breakthroughs
+                  and discoveries.
+                </p>
+                <a href="book-detail.html?id=4" class="btn btn-primary mt-auto"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="books.html" class="btn btn-outline-primary btn-lg"
+            >View All Books</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-subtitle">
+          Join us for engaging literary events and community activities
+        </p>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card event-card h-100">
+              <div class="card-body">
+                <div class="event-date">
+                  <small>DEC</small><br />
+                  <strong>15</strong>
+                </div>
+                <h5 class="card-title">Book Reading Circle</h5>
+                <p class="card-text">
+                  Join fellow book lovers for our monthly reading circle
+                  discussion on contemporary fiction.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-clock me-2"></i>6:00 PM - 8:00 PM
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-geo-alt me-2"></i>Main Reading Hall
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card event-card h-100">
+              <div class="card-body">
+                <div class="event-date">
+                  <small>DEC</small><br />
+                  <strong>20</strong>
+                </div>
+                <h5 class="card-title">Author Meet & Greet</h5>
+                <p class="card-text">
+                  Meet acclaimed author Sarah Johnson as she discusses her
+                  latest novel and writing journey.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-clock me-2"></i>3:00 PM - 5:00 PM
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-geo-alt me-2"></i>Conference Room
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card event-card h-100">
+              <div class="card-body">
+                <div class="event-date">
+                  <small>JAN</small><br />
+                  <strong>05</strong>
+                </div>
+                <h5 class="card-title">Digital Literacy Workshop</h5>
+                <p class="card-text">
+                  Learn how to access and use our digital resources, including
+                  e-books and online databases.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-clock me-2"></i>10:00 AM - 12:00 PM
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-geo-alt me-2"></i>Computer Lab
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="events.html" class="btn btn-primary btn-lg"
+            >View All Events</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="promotions" class="section">
+      <div class="container">
+        <h2 class="section-title">Library Promotions</h2>
+
+        <div class="promotion-banner">
+          <div class="container">
+            <h3><i class="bi bi-star-fill me-2"></i>Become a Member Today!</h3>
+            <p class="lead">
+              Join Silent Library and enjoy unlimited access to our collection,
+              exclusive events, and digital resources.
+            </p>
+            <a href="contact.html" class="btn btn-light btn-lg me-3"
+              >Join Now</a
+            >
+            <a href="#membership-benefits" class="btn btn-outline-light btn-lg"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div id="membership-benefits" class="row mt-5">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="text-center">
+              <i
+                class="bi bi-book-fill text-primary-custom"
+                style="font-size: 3rem"
+              ></i>
+              <h4 class="mt-3">Unlimited Borrowing</h4>
+              <p>
+                Access our entire collection with no limits on borrowing books
+                and resources.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="text-center">
+              <i
+                class="bi bi-calendar-event text-primary-custom"
+                style="font-size: 3rem"
+              ></i>
+              <h4 class="mt-3">Exclusive Events</h4>
+              <p>
+                Get priority access to author readings, workshops, and special
+                library events.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="text-center">
+              <i
+                class="bi bi-laptop text-primary-custom"
+                style="font-size: 3rem"
+              ></i>
+              <h4 class="mt-3">Digital Access</h4>
+              <p>
+                Access our digital library, e-books, and online databases from
+                anywhere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5><i class="bi bi-book me-2"></i>Silent Library</h5>
+            <p>
+              Your gateway to knowledge and community. Discover, learn, and
+              connect through our comprehensive library services.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="me-3" aria-label="Facebook"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Twitter"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Instagram"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contact Info</h5>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>123 Library Street<br />Knowledge
+              City, KC 12345
+            </p>
+            <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+            <p><i class="bi bi-envelope me-2"></i>info@silentlibrary.com</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Opening Hours</h5>
+            <p><strong>Monday - Friday:</strong><br />9:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong><br />10:00 AM - 6:00 PM</p>
+            <p><strong>Sunday:</strong><br />12:00 PM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <a href="privacy.html" class="me-3">Privacy Policy</a>
+              <a href="sitemap.html">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

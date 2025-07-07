@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book details - Silent Library. Detailed information about books in our collection."
+    />
+    <meta
+      name="keywords"
+      content="book details, Silent Library, book information"
+    />
+    <title>Book Details - Silent Library</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-book me-2"></i>Silent Library
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="books.html">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#promotions"
+                >Library Promotions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="breadcrumb-section" style="margin-top: 76px">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="books.html">Books</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Book Details
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="book-detail-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="images/elon-musk.JPG"
+              class="book-cover w-100"
+              alt="Book cover of Elon Musk biography by Walter Isaacson, featuring a close-up of Elon Musk's face"
+              id="bookCover"
+            />
+
+            <div class="mt-4 d-grid gap-2">
+              <button class="btn btn-primary btn-lg" id="borrowBtn">
+                <i class="bi bi-book me-2"></i>Borrow Now
+              </button>
+              <button class="btn btn-outline-primary" id="reserveBtn">
+                <i class="bi bi-bookmark me-2"></i>Reserve
+              </button>
+              <button class="btn btn-outline-secondary" id="wishlistBtn">
+                <i class="bi bi-heart me-2"></i>Add to Wishlist
+              </button>
+            </div>
+
+            <div class="mt-3">
+              <div class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle me-2"></i>
+                <strong>Available</strong> - 153 copies in stock
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-6">
+            <div class="book-info">
+              <h1 class="display-5 mb-3" id="bookTitle">Elon Musk</h1>
+              <p class="lead text-muted mb-4" id="bookAuthor">
+                by Walter Isaacson
+              </p>
+
+              <div class="mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="text-warning me-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <span class="text-muted">4.34/5 (248 reviews)</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4>Description</h4>
+                <p class="lead" id="shortDescription">
+                  This biography details Elon Musk's journey, from bullied child
+                  to a visionary in EVs, space, and AI. It explores his driven,
+                  complex nature shaped by his past.
+                </p>
+              </div>
+
+              <div class="book-meta">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="meta-item">
+                      <span class="meta-label">Genre:</span>
+                      <span id="bookGenre">Non-Fiction</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Publication Year:</span>
+                      <span id="publicationYear">2023</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">ISBN:</span>
+                      <span id="isbn">9781982181284</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="meta-item">
+                      <span class="meta-label">Publisher:</span>
+                      <span id="publisher">Simon & Schuster</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Pages:</span>
+                      <span id="pages">688</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Language:</span>
+                      <span id="language">English</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h4>Detailed Summary</h4>
+                <div id="detailedDescription">
+                  <p>
+                    The #1 New York Times and global bestseller from Walter
+                    Isaacson—the acclaimed author of Steve Jobs, Einstein: His
+                    Life and World, Benjamin Franklin, and Leonardo da Vinci—is
+                    the astonishingly intimate story of the most fascinating,
+                    controversial innovator of modern times. For two years,
+                    Isaacson shadowed Elon Musk as he executed his vision for
+                    electric vehicles at Tesla, space exploration with SpaceX,
+                    the AI revolution, and the takeover of Twitter and its
+                    conversion to X. The result is the definitive portrait of
+                    the mercurial pioneer that offers clues to his political
+                    instincts, future ambitions, and overall worldview.
+                  </p>
+                  <p>
+                    When Elon Musk was a kid in South Africa, he was regularly
+                    beaten by bullies. One day a group pushed him down some
+                    concrete steps and kicked him until his face was a swollen
+                    ball of flesh. He was in the hospital for a week. But the
+                    physical scars were minor compared to the emotional ones
+                    inflicted by his father, an engineer, rogue, and charismatic
+                    fantasist.
+                  </p>
+                  <p>
+                    His father impact on his psyche would linger. He developed
+                    into a tough yet vulnerable man-child, prone to abrupt
+                    Jekyll-and-Hyde mood swings, with an exceedingly high
+                    tolerance for risk, a craving for drama, an epic sense of
+                    mission, and a maniacal intensity that was callous and at
+                    times destructive.
+                  </p>
+                  <p>
+                    At the beginning of 2022—after a year marked by SpaceX
+                    launching thirty-one rockets into orbit, Tesla selling a
+                    million cars, and him becoming the richest man on earth—Musk
+                    spoke ruefully about his compulsion to stir up dramas. “I
+                    need to shift my mindset away from being in crisis mode,
+                    which it has been for about fourteen years now, or arguably
+                    most of my life,” he said.
+                  </p>
+                  <p>
+                    It was a wistful comment, not a New Year resolution. Even as
+                    he said it, he was secretly buying up shares of Twitter, the
+                    world ultimate playground. Over the years, whenever he was
+                    in a dark place, his mind went back to being bullied on the
+                    playground. Now he had the chance to own the playground.
+                  </p>
+                  <p>
+                    For two years, Isaacson shadowed Musk, attended his
+                    meetings, walked his factories with him, and spent hours
+                    interviewing him, his family, friends, coworkers, and
+                    adversaries. The result is the revealing inside story,
+                    filled with amazing tales of triumphs and turmoil, that
+                    addresses the question: are the demons that drive Musk also
+                    what it takes to drive innovation and progress?
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h5>Tags</h5>
+                <span class="badge bg-primary me-2">Non-Fiction</span>
+                <span class="badge bg-primary me-2">Business</span>
+                <span class="badge bg-primary me-2">Innovation</span>
+                <span class="badge bg-primary me-2">Entrepreneurship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <h3 class="section-title">Related Books</h3>
+        <p class="section-subtitle">
+          You might also be interested in these books
+        </p>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="images/heroes-of-the-computer-revolution.jpg"
+                class="card-img-top"
+                alt="Book cover for Hackers: Heroes of the Computer Revolution by Steven Levy, depicting themes of early computing and the pioneering hacker culture"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Hackers Heroes of the Computer Revolution
+                </h5>
+                <p class="text-muted small">by Steven Levy</p>
+                <p class="card-text flex-grow-1">
+                  Exploring how technology is reshaping our world and the future
+                  of human interaction.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-primary mb-2">Technology</span>
+                  <div class="d-grid">
+                    <a href="book-detail.html?id=2" class="btn btn-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                class="card-img-top"
+                alt="AI and Machine Learning"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">AI and Machine Learning</h5>
+                <p class="text-muted small">by Dr. Kevin Zhang</p>
+                <p class="card-text flex-grow-1">
+                  An introduction to artificial intelligence and its
+                  applications in modern society.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-primary mb-2">Technology</span>
+                  <div class="d-grid">
+                    <a href="book-detail.html?id=12" class="btn btn-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                class="card-img-top"
+                alt="Quantum Physics"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Quantum Physics Made Simple</h5>
+                <p class="text-muted small">by Prof. David Lee</p>
+                <p class="card-text flex-grow-1">
+                  Understanding the fundamental principles of quantum mechanics
+                  for beginners.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-info mb-2">Science</span>
+                  <div class="d-grid">
+                    <a href="book-detail.html?id=6" class="btn btn-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card book-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                class="card-img-top"
+                alt="The Innovators"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Innovators</h5>
+                <p class="text-muted small">by Walter Isaacson</p>
+                <p class="card-text flex-grow-1">
+                  The stories behind the digital revolution and the people who
+                  made it happen.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-danger mb-2">Non-Fiction</span>
+                  <div class="d-grid">
+                    <a href="book-detail.html?id=9" class="btn btn-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="section-title">Reader Reviews</h3>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="card mb-4">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <div>
+                    <h6 class="card-title mb-1">John Doe</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <small class="text-muted">2 weeks ago</small>
+                </div>
+                <p class="card-text">
+                  "Excellent book for anyone looking to improve their
+                  programming skills. The examples are clear and the
+                  explanations are easy to follow. Highly recommended!"
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <div>
+                    <h6 class="card-title mb-1">Jane Smith</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                  <small class="text-muted">1 month ago</small>
+                </div>
+                <p class="card-text">
+                  "Great resource for both beginners and experienced
+                  programmers. The practical examples really help solidify the
+                  concepts."
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <div>
+                    <h6 class="card-title mb-1">Mike Johnson</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                  <small class="text-muted">2 months ago</small>
+                </div>
+                <p class="card-text">
+                  "Well-structured book with comprehensive coverage of
+                  programming concepts. The author does a great job of
+                  explaining complex topics in simple terms."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5><i class="bi bi-book me-2"></i>Silent Library</h5>
+            <p>
+              Your gateway to knowledge and community. Discover, learn, and
+              connect through our comprehensive library services.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="me-3" aria-label="Facebook"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Twitter"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" class="me-3" aria-label="Instagram"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contact Info</h5>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>123 Library Street<br />Knowledge
+              City, KC 12345
+            </p>
+            <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+            <p><i class="bi bi-envelope me-2"></i>info@silentlibrary.com</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Opening Hours</h5>
+            <p><strong>Monday - Friday:</strong><br />9:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong><br />10:00 AM - 6:00 PM</p>
+            <p><strong>Sunday:</strong><br />12:00 PM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <a href="privacy.html" class="me-3">Privacy Policy</a>
+              <a href="sitemap.html">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
